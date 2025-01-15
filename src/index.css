@@ -7,6 +7,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-family: sans-serif;
 }
 
 nav{
@@ -33,4 +34,86 @@ nav ul{
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+}
+
+
+                /* HeRO SECTION  */
+
+.hero{
+    display: flex;
+    margin: 40px auto;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-content{
+    width: 600px;
+    
+}
+.hero-content h1{
+    padding-top: 30px;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 84px;
+    justify-content: center;
+    color: #000000;
+}
+.hero-content p{
+    padding-top: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 430px;
+    color: #5A5959;
+}
+
+.hero-img{
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.hero-img img{
+    width: 530px;
+    height: 488px;
+}
+
+.hero-btn{
+    padding-top: 30px;
+}
+.btn1{
+    height: 30px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn2{
+    height: 30px;
+    width: 100px;
+    
+    color: black;
+    border: 1px solid #5A5959;
+    outline: none;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopping p{
+    font-size: 13px;
+    padding-top: 20px;
+    font-weight: bold;
+
+}
+.brand-logo{
+    padding-top: 10px;
+}
+.amazon{
+    margin-left: 10px;
 }

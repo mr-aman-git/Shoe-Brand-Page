@@ -1,13 +1,12 @@
 import React from 'react'
-import "./index.css"
-import Logo from './assets/brand_logo.png'
+import "../index.css"
+import Logo from '../assets/brand_logo.png'
 
-
-const BrandPage = () => {
+const Navigation = () => {
   return (
     <div>
         <nav>
-            <div className="logo"><img src={Logo} alt="" /></div>
+            <div className="logo"><img src={Logo} alt="logo" /></div>
 
             <ul>
                 <li href="#">Menu</li>
@@ -21,4 +20,4 @@ const BrandPage = () => {
   )
 }
 
-export default BrandPage
+export default Navigation

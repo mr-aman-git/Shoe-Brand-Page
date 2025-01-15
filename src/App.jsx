@@ -1,11 +1,13 @@
 import React from 'react'
-import BrandPage from './BrandPage'
+import Navigation from './Components/Navigation'
+import HeroSection from './Components/HeroSection'
 
 
 const App = () => {
   return (
     <>
-    <BrandPage />
+    <Navigation />
+    <HeroSection />
     </>
   )
 }
