@@ -1,10 +1,9 @@
 import React from 'react'
 import './ContactForm.css'
 import ContactImg from './Images/contact.png'
-import Button from './Button'
-let url= '<i class="ri-message-2-line"></i>'
 
 const ContactForm = () => {
+
   return (
     <section>
         <div className="contactHeading">
@@ -16,12 +15,18 @@ const ContactForm = () => {
         
         <div className="formSection">
             
-            <div className="form-bojjx">
+            <div className="form-box">
+
             <div className='propBtn'>
-            
-            <Button name='VIA SUPPORT CHAT' />
-            <Button name='VIA SUPPORT EMAIL'/>
+            <button className='form-btns' onClick={()=>{return console.log("VIA SUPPORT CHAT");
+            }}><i className="ri-message-2-line"></i>VIA SUPPORT CHAT</button>
+
+            <button className='form-btns' onClick={()=>{return console.log("VIA CALL");
+            }}><i className="ri-phone-line"></i>VIA CALL</button>
             </div>
+
+            <button className='form-btns-outline' onClick={()=>{return console.log("VIA EMAIL SUPPORT");
+            }}><i class="ri-mail-ai-line"></i>VIA EMAIL FORM</button>
 
               <form action="./php" className="form-box">
               <label htmlFor="name" id="form-label">Name</label>
