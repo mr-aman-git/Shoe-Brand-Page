@@ -1,0 +1,84 @@
+.contactHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactForm{
+    margin-top: 30px;
+    max-width: 1200px;
+}
+
+.contactForm h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+.contactForm p{
+    padding-top: 10px;
+    color: #5A5959;
+}
+
+.formSection{
+    display: flex;
+    max-width: 1200px;
+    height: 600px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.form-box{
+    width: 600px;
+    position: relative;
+}
+
+form input{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    
+}
+#form-label{
+    position: absolute;
+    top: -10px;
+    margin-left: 20px;
+    background-color: white;
+    padding: 0 2px;
+}
+
+#form-email{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 20px;
+    background-color: white;
+    padding: 0 2px;
+}
+
+#text-area{
+    min-width: 400px;
+    max-width: 500px;
+    font-size: 16px;
+    padding-top: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.formBox-btn{
+    padding: 10px 50px;
+    border: none;
+    background-color: rgb(41, 106, 235);
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.propBtn{
+    margin-bottom: 20px;
+}
+    
