@@ -17,7 +17,8 @@ const ContactForm = () => {
     console.log("Name: ", Name);
     console.log("Email: ", Email);
     console.log("Text: ", Text); 
-    toast.success("Form Submitted", {position:"top-center", theme: "colored"});
+    toast.success("Form Submitted", {position:"bottom-right", theme: "colored"});
+    
 
   }
 

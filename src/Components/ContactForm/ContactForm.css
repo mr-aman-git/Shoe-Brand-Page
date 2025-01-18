@@ -1,3 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
 .contactHeading{
     display: flex;
     justify-content: center;
@@ -198,7 +211,6 @@ form input{
     }
 
     .form-box{
-        width: 370px;
         justify-content: center;
         margin: 0 auto;
     }
