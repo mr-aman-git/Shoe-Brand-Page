@@ -2,22 +2,23 @@ import React, { useState } from 'react'
 import './ContactForm.css'
 import ContactImg from './Images/contact.png'
 
+import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/reactToastify.css';
+
 const ContactForm = () => {
-  let[Name, setName]=useState('');
+  
+  let[Name, setName]=useState('Aman');
   let[Email, setEmail]=useState('');
   let[Text, setText]=useState('');
-
+  
   let onSubmit = (event)=>{
     event.preventDefault();
 
-    // setName(event.target[0].value);
-    // setEmail(event.target[1].value);
-    // setText(event.target[2].value);
-
     console.log("Name: ", Name);
     console.log("Email: ", Email);
-    console.log("Text: ", Text);    
-    
+    console.log("Text: ", Text); 
+    toast.success("Form Submitted", {position:"top-center", theme: "colored"});
+
   }
 
   return (
@@ -52,7 +53,7 @@ const ContactForm = () => {
 
               <form onSubmit={onSubmit} className="form-box">
               <label htmlFor="name" id="form-label">Name</label>
-              <input type="name" name="Name" placeholder='Enter Full Name' onChange={(event)=>setName(event.target.value)
+              <input type="name" name="Name" placeholder='Enter Full Name' onChange={(event)=>{setName(event.target.value);}
               }/>
 
               <label htmlFor="email" id="form-email">Email</label>
@@ -75,7 +76,7 @@ const ContactForm = () => {
             </div>
         </div>
 
-
+              <ToastContainer />
     </section>
   )
 }

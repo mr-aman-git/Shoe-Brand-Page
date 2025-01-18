@@ -37,6 +37,10 @@
     font-weight: 500;
 }
 
+.propBtn{
+    margin-bottom: 20px;
+}
+
 .form-btns-outline i{
     padding-right: 3px;
     color: black;
@@ -110,7 +114,7 @@ form input{
 }
 
 .formBox-btn{
-    padding: 10px 70px;
+    padding: 14px 70px;
     border: none;
     background-color: rgb(41, 106, 235);
     color: white;
@@ -120,8 +124,9 @@ form input{
     cursor: pointer;
     border-radius: 4px;
 }
-.propBtn{
-    margin-bottom: 20px;
+
+.formBox-btn:hover{
+    background-color: green;
 }
 
 
