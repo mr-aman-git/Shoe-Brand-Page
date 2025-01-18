@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/reactToastify.css';
 
 const ContactForm = () => {
-  
+
   let[Name, setName]=useState('Aman');
   let[Email, setEmail]=useState('');
   let[Text, setText]=useState('');
@@ -26,7 +26,7 @@ const ContactForm = () => {
         <div className="contactHeading">
         <div className="contactForm">
             <h1>CONTACT US</h1>
-            <p>LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM YOU! WHETHER YOU HAVE A QUESTION, COMMENT, OR JUST WANT TO CHAT , YOU CAN REACH OUT TO US THROUGH THE CONTACT FORM OF THIS PAGE, OR BY PHONE, EMAIL, OR SOCIAL MEDIA. </p>
+            <p>LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM YOU! <span> WHETHER YOU HAVE A QUESTION, COMMENT, OR JUST WANT TO CHAT , YOU CAN REACH OUT TO US THROUGH THE CONTACT FORM OF THIS PAGE, OR BY PHONE, EMAIL, OR SOCIAL MEDIA.</span> </p>
         </div>
         </div>
         
@@ -51,7 +51,7 @@ const ContactForm = () => {
 
                  {/* FORM SECTION OPEN*/}
 
-              <form onSubmit={onSubmit} className="form-box">
+              <form onSubmit={onSubmit} >
               <label htmlFor="name" id="form-label">Name</label>
               <input type="name" name="Name" placeholder='Enter Full Name' onChange={(event)=>{setName(event.target.value);}
               }/>
@@ -74,8 +74,8 @@ const ContactForm = () => {
             <div className="contactImg">
             <img src={ContactImg} alt="Image" />
             </div>
-        </div>
-
+        
+          </div>
               <ToastContainer />
     </section>
   )

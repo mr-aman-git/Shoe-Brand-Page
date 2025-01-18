@@ -17,9 +17,10 @@
     color: #5A5959;
 }
 
-          /* 3 Button Open */
+/* 3 Button Open */
+
 .form-btns{
-    min-width: 212px;
+    width: 212px;
     height: 45px;
     margin-right: 17px;
     color: white;
@@ -51,7 +52,7 @@
 .form-btns-outline{
     font-weight: 600;
     font-size: 16px;
-    min-width: 440px;
+    width: 440px;
     height: 45px;
     margin-right: 17px;
     color: black;
@@ -60,10 +61,10 @@
     margin-bottom: 20px;
 }
 
-                /* 3 Button END */
+/* 3 Button END */
 
 
- /*               FORM SECTION  OPEN*/
+ /* FORM SECTION  OPEN*/
 
 .formSection{
     display: flex;
@@ -90,7 +91,7 @@ form input{
 }
 #form-label{
     position: absolute;
-    top: -10px;
+    margin-top: -10px;
     margin-left: 20px;
     background-color: white;
     padding: 0 2px;
@@ -105,8 +106,7 @@ form input{
 }
 
 #text-area{
-    min-width: 440px;
-    max-width: 500px;
+    width: 440px;
     font-size: 16px;
     padding-top: 10px;
     outline: none;
@@ -128,16 +128,103 @@ form input{
 .formBox-btn:hover{
     background-color: green;
 }
+/*  FORM SECTION  END*/
 
 
-
- /*               FORM SECTION  END*/
-
-    
-/*               CONTACT IMAGE  OPEN*/
-
+/* CONTACT IMAGE  OPEN*/
 .contactImg img{
     height: 450px;
 }
+/* CONTACT IMAGE  END*/
 
-/*               CONTACT IMAGE  END*/
+
+
+
+/*                           RESPONSIVE VIEW                   */
+
+/* TABLET VIEW */
+@media only screen and (max-width: 1080px) {
+    section{
+        margin-left: 30px;
+    }
+
+    .contactImg img{
+        margin-bottom: 50px;
+    }
+
+    .form-btns{
+        margin-bottom: 17px;
+    }
+    
+
+}
+
+/* LANDSCAPE VIEW */
+@media only screen and (max-width: 850px) {
+
+    .contactImg{
+        display: none;
+    }
+    .form-btns{
+        margin-bottom: -17px;
+    }
+
+    .contactForm p{
+        max-width: 800px;
+        padding-top: 10px;
+        color: #5A5959;
+    }
+    .form-box{
+        width: 600px;
+        position: relative;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+}
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 500px) {
+    .contactImg{
+        display: none;
+    }
+    .form-btns{
+        width: 270px;
+        height: 40px;
+        margin-bottom: 15px;
+
+    }
+
+    .form-box{
+        width: 370px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .form-btns-outline{
+        font-weight: 500;
+        width: 270px;
+        height: 40px;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    form input{
+        width: 270px;
+        height: 40px;
+        
+    }
+    #text-area{
+        width: 270px;
+    }
+
+    .contactForm p span{
+        display: none;
+    }
+
+    .formBox-btn{
+        padding: 10px 50px;
+    }
+}
