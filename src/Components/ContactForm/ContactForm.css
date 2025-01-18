@@ -58,6 +58,9 @@
 
                 /* 3 Button END */
 
+
+ /*               FORM SECTION  OPEN*/
+
 .formSection{
     display: flex;
     max-width: 1200px;
@@ -117,9 +120,19 @@ form input{
     cursor: pointer;
     border-radius: 4px;
 }
-
-
 .propBtn{
     margin-bottom: 20px;
 }
+
+
+
+ /*               FORM SECTION  END*/
+
     
+/*               CONTACT IMAGE  OPEN*/
+
+.contactImg img{
+    height: 450px;
+}
+
+/*               CONTACT IMAGE  END*/

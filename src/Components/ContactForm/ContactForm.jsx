@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactForm.css'
 import ContactImg from './Images/contact.png'
 
 const ContactForm = () => {
+  let[Name, setName]=useState('');
+  let[Email, setEmail]=useState('');
+  let[Text, setText]=useState('');
+
+  let onSubmit = (event)=>{
+    event.preventDefault();
+
+    // setName(event.target[0].value);
+    // setEmail(event.target[1].value);
+    // setText(event.target[2].value);
+
+    console.log("Name: ", Name);
+    console.log("Email: ", Email);
+    console.log("Text: ", Text);    
+    
+  }
 
   return (
     <section>
@@ -17,6 +33,8 @@ const ContactForm = () => {
             
             <div className="form-box">
 
+            {/* 3 BUTTON SECTION OPEN*/}
+
             <div className='propBtn'>
             <button className='form-btns' onClick={()=>{return console.log("VIA SUPPORT CHAT");
             }}><i className="ri-message-2-line"></i>VIA SUPPORT CHAT</button>
@@ -28,18 +46,27 @@ const ContactForm = () => {
             <button className='form-btns-outline' onClick={()=>{return console.log("VIA EMAIL SUPPORT");
             }}><i class="ri-mail-ai-line"></i>VIA EMAIL FORM</button>
 
-              <form action="./php" className="form-box">
+            {/* 3 BUTTON SECTION END*/}
+
+                 {/* FORM SECTION OPEN*/}
+
+              <form onSubmit={onSubmit} className="form-box">
               <label htmlFor="name" id="form-label">Name</label>
-              <input type="name" name="Name" placeholder='Enter Full Name'/>
+              <input type="name" name="Name" placeholder='Enter Full Name' onChange={(event)=>setName(event.target.value)
+              }/>
 
               <label htmlFor="email" id="form-email">Email</label>
-              <input type="email" name="Name" placeholder='Enter Email' required/>
+              <input type="email" name="Name" placeholder='Enter Email' onChange={(event)=>setEmail(event.target.value)
+              } required/>
 
               <label htmlFor="text" id='form-email'>Text</label>
-              <textarea name="text" id="text-area" rows={8} placeholder='Type Here'></textarea>
+              <textarea name="text" id="text-area" rows={8} placeholder='Type Here' onChange={(event)=>setText(event.target.value)
+              }></textarea>
+              <div className="submitBtn">
+              <button className='formBox-btn'>Submit</button> </div>
               </form>
 
-              <button className='formBox-btn'>Submit</button>
+              {/* FORM SECTION END */}
 
             </div>
 
