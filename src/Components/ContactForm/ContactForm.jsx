@@ -14,9 +14,9 @@ const ContactForm = () => {
   let onSubmit = (event)=>{
     event.preventDefault();
 
-    console.log("Name: ", Name);
-    console.log("Email: ", Email);
-    console.log("Text: ", Text); 
+    // console.log("Name: ", Name);
+    // console.log("Email: ", Email);
+    // console.log("Text: ", Text);
     toast.success("Form Submitted", {position:"bottom-right", theme: "colored"});
     
 
